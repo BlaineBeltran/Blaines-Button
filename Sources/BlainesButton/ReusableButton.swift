@@ -19,7 +19,7 @@ public class BlainesButton: UIButton {
     public var label: UILabel = {
         let textLabel = UILabel()
         textLabel.translatesAutoresizingMaskIntoConstraints = false
-        textLabel.text = "Home"
+        textLabel.text = "Hello - From Blaine"
         textLabel.textColor = .white
         return textLabel
     }()
@@ -53,7 +53,7 @@ public class BlainesButton: UIButton {
     
     private func configureButton() {
         
-        self.layer.cornerRadius = 12
+        self.layer.cornerRadius = 15
         
         stackView.addArrangedSubviews(icon, label)
         addSubview(stackView)
@@ -62,8 +62,8 @@ public class BlainesButton: UIButton {
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
-            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 2),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -2)
+            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ])
     }
 }
